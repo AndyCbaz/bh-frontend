@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dashboard-cardblock {
+    @apply flex flex-grow flex-col rounded-xl bg-primary-gray;
+  }
+  .header-dashboard-cardblock {
+    @apply flex justify-start items-center px-2 pt-2 pb-1 gap-2 border-b border-primary-yellow;
+  }
+  .section-dashboard-cardblock {
+    @apply flex py-2 px-[10px]; 
+  }
+
+  .footer-dashboard-cardblock {
+    @apply flex;
+  }
+}

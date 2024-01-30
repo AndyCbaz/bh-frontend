@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header-dashboard {
+    @apply flex h-[18%] w-full flex-col border-b-2 border-b-primary-yellow;
+  }
+  .header-dashboard-nav {
+    @apply flex h-[50%] w-full flex-row items-center justify-around;
+  }
+  .header-dashboard-wearhouses {
+    @apply flex h-[50%] w-full flex-col;
+  }
+
+  .main-dashboard {
+    @apply relative flex h-[82%] w-full flex-col gap-2 overflow-y-auto p-2;
+  }
+  .main-dashboard-floating-menu {
+    @apply fixed bottom-4 right-2 flex flex-col-reverse gap-2;
+  }
+}

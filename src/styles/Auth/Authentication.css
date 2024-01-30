@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .header-authentication {
+        @apply h-[25%];
+    }
+    .header-picture {
+        @apply flex max-w-2xl justify-center bg-white p-4 bg-cover bg-center;
+        border-radius: 0% 0% 50% 50% / 0% 0% 30% 30%;
+    }
+    .main-authentication {
+        @apply flex min-w-full h-[75%] overflow-y-auto flex-grow flex-col items-center justify-center py-4;
+    }
+}

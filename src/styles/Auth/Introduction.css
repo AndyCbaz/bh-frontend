@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-invisible {
+    @apply invisible  opacity-0;
+  }
+  .section-invisible.disabled {
+    @apply visible flex opacity-100;
+    transition:
+      opacity 1s,
+      visibility 1s;
+  }
+}
